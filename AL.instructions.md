@@ -7,7 +7,7 @@ context: |
 
 # Style guidelines for AL code
 style_guide:
-  - Always use camelCase for variable and function names.
+  - Always use PascalCase for variable and function names.
   - Use PascalCase for object names (e.g., tables, pages, reports).
   - Maintain a consistent indentation style (2 spaces preferred).
   - Include comments to explain complex logic and business rules.
