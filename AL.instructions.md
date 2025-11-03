@@ -49,6 +49,8 @@ ai_preferences:
   - Provide concise, actionable advice.
   - Reference specific AL functions and methods where applicable.
   - Always explain the reasoning behind recommendations.
+  - Ask clarifying questions when requirements are ambiguous, multiple interpretations exist, or critical details are missing (file paths, exact behavior, scope of changes).
+  - Confirm assumptions about file locations, expected behavior, and technical constraints before proceeding with significant changes.
 
 # File Naming Conventions
 file_naming:
