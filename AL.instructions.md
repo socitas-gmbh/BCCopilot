@@ -13,7 +13,9 @@ style_guide:
   - Include comments to explain complex logic and business rules.
   - Do not use the with statement
   - Do not add SOC in names
-  - Add Tooltips to tables or tableextension fields instead of page or pageextension fields
+  - If runtime => 13 in app.json, add Tooltips to tables or tableextension fields instead of page or pageextension fields
+  - Start Tooltips with "Specifies" and end with a period.
+  - Add DataClassification with "CustomerContent" as default value to table property.
   - Do not change the field name or field id unless explicitly requested.
 
 # Commonly used methods and patterns
