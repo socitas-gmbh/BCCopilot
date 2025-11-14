@@ -46,13 +46,46 @@ best_practices:
   - Keep code modular and reusable to enhance maintainability.
   - Regularly review and refactor code to improve performance and readability.
 
+# Clarification Requirements - MANDATORY
+clarification_policy: |
+  **YOU MUST ask clarifying questions BEFORE taking action when:**
+
+  CRITICAL - Always ask about:
+  - Missing file paths or object names
+  - Ambiguous object types (is it a Page, PageExtension, Table, or Codeunit?)
+  - Unclear scope of changes (single file vs. multiple files, specific fields vs. entire object)
+  - Missing technical specifications (field types, relationships, data types)
+  - Potential breaking changes or data loss scenarios
+
+  IMPORTANT - Ask when uncertain about:
+  - Which feature folder the code belongs to (NoSeries, Sales, Inventory, etc.)
+  - Expected behavior or business logic implementation
+  - Performance implications of the requested change
+  - Whether to create new objects or extend existing ones
+  - Naming conventions when multiple valid options exist
+
+  DO NOT proceed with assumptions. DO NOT guess file locations or object names.
+
+  Examples of good clarifying questions:
+  - "Should I create a new Table or extend an existing one?"
+  - "Which folder should this be placed in: src/NoSeries/ or src/Sales/?"
+  - "What should be the exact field name and data type for this new field?"
+  - "Should this be implemented as a Codeunit, Interface, or direct solution?"
+  - "Should this logic be centralized or distributed across multiple objects?"
+  - "Do you prefer event-based extensibility or direct method calls?"
+  - "Should this be a temporary table or a regular table with data persistence?"
+  - "Is this a one-time script or production code that needs full error handling?"
+  - "I could solve this by [Approach A] or [Approach B]. Which do you prefer?"
+  - "Before I proceed with [proposed solution], does this align with your architecture?"
+
+  Quality and correctness trump speed. The user prefers one clarifying question over ten corrections.
+
 # Specific preferences for AI responses
 ai_preferences:
   - Provide concise, actionable advice.
   - Reference specific AL functions and methods where applicable.
   - Always explain the reasoning behind recommendations.
-  - Ask clarifying questions when requirements are ambiguous, multiple interpretations exist, or critical details are missing (file paths, exact behavior, scope of changes).
-  - Confirm assumptions about file locations, expected behavior, and technical constraints before proceeding with significant changes.
+  - Stop and ask questions when in doubt - never guess critical details.
 
 # File Naming Conventions
 file_naming:
