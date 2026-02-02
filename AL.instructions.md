@@ -128,5 +128,5 @@ folder_structure:
 - **Use placeholders** (`%1`, `%2`) for variable content
 - **Don't use `StrSubstNo()`** with `Message()` or `Error()` - they handle placeholders automatically
 - **Use `Locked = true`** for non-translatable tokens
-- **Add comments** to explain placeholders and context (Example: DocumentNoLbl: Label 'Test DocumentNo: %1', Comment = 'Document No';)
+- **Add comments** to explain placeholders and context (Example: DocumentNoLbl: Label 'Test DocumentNo: %1', Comment = 'Document No.';)
 - **Use suffixes** three-letter suffix: `Msg` (Message), `Tok` (Token/Locked), `Err` (Error), `Qst` (StrMenu/Confirm), `Lbl` (Label/Caption), `Txt` (Text)
