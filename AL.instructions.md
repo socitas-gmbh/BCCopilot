@@ -17,6 +17,8 @@ style_guide:
   - Start Tooltips with "Specifies" and end with a period.
   - Add DataClassification with "CustomerContent" as default value to table property.
   - Do not change the field name or field id unless explicitly requested.
+  - If you write new code: Always use Validate() instead of direct assignment (:=) when setting field values.
+  - Always use labels for user-facing text to ensure proper translation support.
 
 # Commonly used methods and patterns
 common_methods:
@@ -120,3 +122,11 @@ folder_structure:
   - Place shared components in a "Common" or "Shared" folder:
     - src/Common/Helpers/DateHelper.Codeunit.al
     - src/Common/Interfaces/IPostable.Interface.al
+
+# Label instructions
+- **Always use labels** for user-facing text
+- **Use placeholders** (`%1`, `%2`) for variable content
+- **Don't use `StrSubstNo()`** with `Message()` or `Error()` - they handle placeholders automatically
+- **Use `Locked = true`** for non-translatable tokens
+- **Add comments** to explain placeholders and context (Example: DocumentNoLbl: Label 'Test DocumentNo: %1', Comment = 'Document No';)
+- **Use suffixes** three-letter suffix: `Msg` (Message), `Tok` (Token/Locked), `Err` (Error), `Qst` (StrMenu/Confirm), `Lbl` (Label/Caption), `Txt` (Text)
