@@ -130,3 +130,4 @@ folder_structure:
 - **Use `Locked = true`** for non-translatable tokens
 - **Add comments** to explain placeholders and context (Example: DocumentNoLbl: Label 'Test DocumentNo: %1', Comment = 'Document No.';)
 - **Use suffixes** three-letter suffix: `Msg` (Message), `Tok` (Token/Locked), `Err` (Error), `Qst` (StrMenu/Confirm), `Lbl` (Label/Caption), `Txt` (Text)
+- **Prefer local variables**
