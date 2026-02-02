@@ -17,6 +17,7 @@ style_guide:
   - Start Tooltips with "Specifies" and end with a period.
   - Add DataClassification with "CustomerContent" as default value to table property.
   - Do not change the field name or field id unless explicitly requested.
+  - If you write new code: Always use `Validate()` instead of direct assignment (`:=`) when setting field values.
 
 # Commonly used methods and patterns
 common_methods:
