@@ -14,6 +14,8 @@ style_guide:
   - Do not use the with statement
   - Do not add SOC in names
   - Add Tooltips to tables or tableextension fields instead of page or pageextension fields
+  - Tooltips on fields should start with "Specifies...".
+  - Tooltips on actions should start with "Executes..." or "Performs...".
   - Do not change the field name or field id unless explicitly requested.
 
 # Commonly used methods and patterns
