@@ -13,9 +13,9 @@ style_guide:
   - Include comments to explain complex logic and business rules.
   - Do not use the with statement
   - Do not add SOC in names
-  - Add Tooltips to tables or tableextension fields instead of page or pageextension fields
-  - Tooltips on fields should start with "Specifies...".
-  - Tooltips on actions should start with "Executes..." or "Performs...".
+  - Add Tooltips to fields on tables and tableextensions rather than duplicating them on corresponding page or pageextension fields, unless a page-specific explanation is explicitly required.
+  - For descriptive tooltips on fields (in tables, tableextensions, pages, pageextensions, reports, reportextensions, and enums), start the text with "Specifies..." and then describe what the field represents or controls.
+  - For descriptive tooltips on actions (in pages, pageextensions, reports, and reportextensions), start the text with "Executes..." or "Performs..." and then describe what the action does. It is acceptable to deviate from these starters when the tooltip primarily communicates warnings, prerequisites, confirmations, or outcomes rather than describing the control itself.
   - Do not change the field name or field id unless explicitly requested.
 
 # Commonly used methods and patterns
